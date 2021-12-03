@@ -1,0 +1,13 @@
+<div class="card-group">
+  <div *ngFor="let d of datoS" class="card">
+    <img [src]="d.foto" class="img-thumbnail" alt="" width="150" height="150">
+ <div class="card-body">
+      <h5 class="card-title">{{d.nombre}}</h5>
+     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+     <p class="card-text"><small class="text-muted">{{d.grado}}</small></p>
+      <button [routerLink]="['/detalles',d.id]">aceptar</button>
+    </div>
+  </div>
+</div>
+
